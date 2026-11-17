@@ -1,0 +1,5 @@
+appfl @ git+https://github.com/APPFL/APPFL.git@743a1ecd87da043c8edeaa9391829f6968ce1204
+torch==2.15.0
+torchvision==0.29.2
+numpy==2.4.6
+omegaconf==2.4.0

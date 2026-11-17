@@ -1,0 +1,30 @@
+client_configs:
+  model_configs:
+    model_path: src/tcs/mnist.py
+    model_name: MNISTMLP
+  train_configs:
+    trainer: TCSTrainer
+    mode: step
+    num_base_steps: 10
+    num_local_steps: 100
+    kappa: 0.5
+    optim: SGD
+    optim_args:
+      lr: 0.1
+    loss_fn: CrossEntropyLoss
+    train_batch_size: 10
+    train_data_shuffle: true
+server_configs:
+  num_clients: 2
+  num_global_epochs: 10
+  scheduler: SyncScheduler
+  scheduler_kwargs:
+    same_init_model: true
+  aggregator: TCSAggregator
+  aggregator_kwargs: {}
+  logging_output_dirname: output/grpc/server
+  comm_configs:
+    grpc_configs:
+      server_uri: 127.0.0.1:50051
+      max_message_size: 1048576
+      use_ssl: false

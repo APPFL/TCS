@@ -1,0 +1,65 @@
+{
+  "address": "127.0.0.1:50537",
+  "pids": [
+    80559,
+    80602,
+    80603
+  ],
+  "exit_codes": [
+    0,
+    0,
+    0
+  ],
+  "verified_rounds": 10,
+  "verified_uploads": 20,
+  "verified_downloads": 20,
+  "final": {
+    "event": "final",
+    "accuracy": 70.74,
+    "loss": 0.854268325805664,
+    "count": 10000
+  },
+  "elapsed_seconds": 66.24476645793766,
+  "steps": [
+    {
+      "Client1": 10,
+      "Client2": 10
+    },
+    {
+      "Client1": 21,
+      "Client2": 18
+    },
+    {
+      "Client1": 13,
+      "Client2": 14
+    },
+    {
+      "Client1": 14,
+      "Client2": 12
+    },
+    {
+      "Client1": 16,
+      "Client2": 15
+    },
+    {
+      "Client1": 13,
+      "Client2": 12
+    },
+    {
+      "Client1": 13,
+      "Client2": 12
+    },
+    {
+      "Client2": 13,
+      "Client1": 11
+    },
+    {
+      "Client2": 11,
+      "Client1": 11
+    },
+    {
+      "Client2": 12,
+      "Client1": 11
+    }
+  ]
+}

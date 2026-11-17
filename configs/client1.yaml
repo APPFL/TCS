@@ -1,0 +1,18 @@
+client_id: Client1
+train_configs:
+  device: cpu
+  logging_output_dirname: output/grpc/client1
+data_configs:
+  dataset_path: src/tcs/mnist.py
+  dataset_name: get_dataset
+  dataset_kwargs:
+    root: datasets
+    num_clients: 2
+    client_id: 0
+    alpha: 0.1
+    seed: 42
+comm_configs:
+  grpc_configs:
+    server_uri: 127.0.0.1:50051
+    max_message_size: 1048576
+    use_ssl: false
